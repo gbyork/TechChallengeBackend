@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<% include ../partials/navbar %>
+<% include ../partials/header %>
+<body>
+<div class="container">
+    <h1>Birds</h1>
+    <a href="/birds/create" class="btn btn-primary"> + Create</a>
+
+    <table class="table table-bordered table-striped">
+        <% for(var i=0; i <todos.length; i++){ %>
+            <tr>
+                <td><%= todos[i].id%></td>
+                <td><%= todos[i].title%></td>
+                <td><%= todos[i].completed%></td>
+            </tr>
+        <% } %>
+    </table>
+
+</div>
+
+
+
+
+</body>
+</html>
